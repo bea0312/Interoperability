@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:tns="http://models"
+           targetNamespace="http://models"
+           elementFormDefault="qualified">
+
+    <xs:simpleType name="FormOfGovernmentEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="ANARCHY"/>
+            <xs:enumeration value="ARISTOCRACY"/>
+            <xs:enumeration value="AUTHORITARIANISM"/>
+            <xs:enumeration value="BUREAUCRACY"/>
+            <xs:enumeration value="CAPITALISM"/>
+            <xs:enumeration value="CONFEDERATION"/>
+            <xs:enumeration value="COLONIALISM"/>
+            <xs:enumeration value="COMMUNISM"/>
+            <xs:enumeration value="CORPORATOCRACY"/>
+            <xs:enumeration value="DEMOCRACY"/>
+            <xs:enumeration value="ELECTOCRACY"/>
+            <xs:enumeration value="ERGATOCRACY"/>
+            <xs:enumeration value="FASCISM"/>
+            <xs:enumeration value="FEDERALISM"/>
+            <xs:enumeration value="FEUDALISM"/>
+            <xs:enumeration value="GENIOCRACY"/>
+            <xs:enumeration value="IMPERIALISM"/>
+            <xs:enumeration value="KAKISTOCRACY"/>
+            <xs:enumeration value="KLEPTOCRACY"/>
+            <xs:enumeration value="LOGOCRACY"/>
+            <xs:enumeration value="MERITOCRACY"/>
+            <xs:enumeration value="MILITARY_DICTATORSHIP"/>
+            <xs:enumeration value="MONARCHY"/>
+            <xs:enumeration value="OLIGARCHY"/>
+            <xs:enumeration value="PLUTOCRACY"/>
+            <xs:enumeration value="REPUBLICANISM"/>
+            <xs:enumeration value="SOCIALISM"/>
+            <xs:enumeration value="STATISM"/>
+            <xs:enumeration value="TECHNOCRACY"/>
+            <xs:enumeration value="THEOCRACY"/>
+            <xs:enumeration value="TOTALITARIANISM"/>
+            <xs:enumeration value="TRIBALISM"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ContinentEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AFRICA"/>
+            <xs:enumeration value="ANTARCTICA"/>
+            <xs:enumeration value="ASIA"/>
+            <xs:enumeration value="EUROPE"/>
+            <xs:enumeration value="NORTH_AMERICA"/>
+            <xs:enumeration value="AUSTRALIA"/>
+            <xs:enumeration value="SOUTH_AMERICA"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="LanguageEnum">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="AFRIKAANS"/>
+            <xs:enumeration value="ALBANIAN"/>
+            <xs:enumeration value="AMHARIC"/>
+            <xs:enumeration value="ARABIC"/>
+            <xs:enumeration value="ARMENIAN"/>
+            <xs:enumeration value="AZERBAIJANI"/>
+            <xs:enumeration value="BASQUE"/>
+            <xs:enumeration value="BELARUSIAN"/>
+            <xs:enumeration value="BENGALI"/>
+            <xs:enumeration value="BOSNIAN"/>
+            <xs:enumeration value="BULGARIAN"/>
+            <xs:enumeration value="BURMESE"/>
+            <xs:enumeration value="CATALAN"/>
+            <xs:enumeration value="CEBUANO"/>
+            <xs:enumeration value="CHICHEN_ITZA"/>
+            <xs:enumeration value="CHINESE"/>
+            <xs:enumeration value="CORSICAN"/>
+            <xs:enumeration value="CROATIAN"/>
+            <xs:enumeration value="CZECH"/>
+            <xs:enumeration value="DANISH"/>
+            <xs:enumeration value="DUTCH"/>
+            <xs:enumeration value="ENGLISH"/>
+            <xs:enumeration value="ESPERANTO"/>
+            <xs:enumeration value="ESTONIAN"/>
+            <xs:enumeration value="FAROESE"/>
+            <xs:enumeration value="FILIPINO"/>
+            <xs:enumeration value="FINNISH"/>
+            <xs:enumeration value="FRENCH"/>
+            <xs:enumeration value="FRISIAN"/>
+            <xs:enumeration value="GALICIAN"/>
+            <xs:enumeration value="GEORGIAN"/>
+            <xs:enumeration value="GERMAN"/>
+            <xs:enumeration value="GREEK"/>
+            <xs:enumeration value="GUJARATI"/>
+            <xs:enumeration value="HAITIAN_CREOLE"/>
+            <xs:enumeration value="HAUSA"/>
+            <xs:enumeration value="HAWAIIAN"/>
+            <xs:enumeration value="HEBREW"/>
+            <xs:enumeration value="HINDI"/>
+            <xs:enumeration value="HMONG"/>
+            <xs:enumeration value="HUNGARIAN"/>
+            <xs:enumeration value="ICELANDIC"/>
+            <xs:enumeration value="IGBO"/>
+            <xs:enumeration value="INDONESIAN"/>
+            <xs:enumeration value="IRISH"/>
+            <xs:enumeration value="ITALIAN"/>
+            <xs:enumeration value="JAPANESE"/>
+            <xs:enumeration value="JAVANESE"/>
+            <xs:enumeration value="KANNADA"/>
+            <xs:enumeration value="KAZAKH"/>
+            <xs:enumeration value="KHMER"/>
+            <xs:enumeration value="KOREAN"/>
+            <xs:enumeration value="KURDISH"/>
+            <xs:enumeration value="KYRGYZ"/>
+            <xs:enumeration value="LAO"/>
+            <xs:enumeration value="LATIN"/>
+            <xs:enumeration value="LATVIAN"/>
+            <xs:enumeration value="LITHUANIAN"/>
+            <xs:enumeration value="LUXEMBOURGISH"/>
+            <xs:enumeration value="MACEDONIAN"/>
+            <xs:enumeration value="MALAGASY"/>
+            <xs:enumeration value="MALAY"/>
+            <xs:enumeration value="MALAYALAM"/>
+            <xs:enumeration value="MALTESE"/>
+            <xs:enumeration value="MAORI"/>
+            <xs:enumeration value="MARATHI"/>
+            <xs:enumeration value="MONGOLIAN"/>
+            <xs:enumeration value="NEPALI"/>
+            <xs:enumeration value="MONGOLIAN"/>
+            <xs:enumeration value="NEPALI"/>
+            <xs:enumeration value="NORWEGIAN"/>
+            <xs:enumeration value="PASHTO"/>
+            <xs:enumeration value="PERSIAN"/>
+            <xs:enumeration value="POLISH"/>
+            <xs:enumeration value="PORTUGUESE"/>
+            <xs:enumeration value="PUNJABI"/>
+            <xs:enumeration value="ROMANIAN"/>
+            <xs:enumeration value="RUSSIAN"/>
+            <xs:enumeration value="SAMOAN"/>
+            <xs:enumeration value="SCOTS_GAELIC"/>
+            <xs:enumeration value="SERBIAN"/>
+            <xs:enumeration value="SESOTHO"/>
+            <xs:enumeration value="SHONA"/>
+            <xs:enumeration value="SINDHI"/>
+            <xs:enumeration value="SINHALESE"/>
+            <xs:enumeration value="SLOVAK"/>
+            <xs:enumeration value="SLOVENIAN"/>
+            <xs:enumeration value="SOMALI"/>
+            <xs:enumeration value="SPANISH"/>
+            <xs:enumeration value="SUNDANESE"/>
+            <xs:enumeration value="SWAHILI"/>
+            <xs:enumeration value="SWEDISH"/>
+            <xs:enumeration value="TAJIK"/>
+            <xs:enumeration value="TAMIL"/>
+            <xs:enumeration value="TELUGU"/>
+            <xs:enumeration value="THAI"/>
+            <xs:enumeration value="TURKISH"/>
+            <xs:enumeration value="UKRAINIAN"/>
+            <xs:enumeration value="URDU"/>
+            <xs:enumeration value="UZBEK"/>
+            <xs:enumeration value="VIETNAMESE"/>
+            <xs:enumeration value="WELSH"/>
+            <xs:enumeration value="XHOSA"/>
+            <xs:enumeration value="YIDDISH"/>
+            <xs:enumeration value="YORUBA"/>
+            <xs:enumeration value="ZULU"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="country">
+        <xs:sequence minOccurs="1" maxOccurs="1">
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="shortName" type="xs:string"/>
+            <xs:element name="area" type="xs:decimal"/>
+            <xs:element name="population" type="xs:decimal"/>
+            <xs:element name="currency" type="xs:string"/>
+            <xs:element name="formOfGovernment" type="tns:FormOfGovernmentEnum"/>
+            <xs:element name="continent" type="tns:ContinentEnum"/>
+            <xs:element name="language" type="tns:LanguageEnum"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="countries">
+        <xs:complexType>
+            <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="country" type="tns:country"></xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+    <xs:element name="getCountryRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="name" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getCountryResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="country" type="tns:country"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

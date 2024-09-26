@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Information</title>
+</head>
+<body>
+<h1>Country Information</h1>
+<form id="countryForm">
+    <label for="countryName">Enter Country Name:</label>
+    <input type="text" id="countryName" name="countryName" required>
+    <button type="submit">Get Information</button>
+</form>
+<div id="countryInfo"></div>
+<script>
+
+    document.getElementById('countryForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        var countryName = document.getElementById('countryName').value;
+        fetchCountryInfo(countryName);
+    });
+
+    function fetchCountryInfo(countryName) {
+        fetch('/getCountry?name=' + countryName)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(data) {
+                displayCountryInfo(data);
+            })
+            .catch(function(error) {
+                console.error('Error:', error);
+            });
+    }
+
+    function displayCountryInfo(countryData) {
+        var countryInfoDiv = document.getElementById('countryInfo');
+        if (countryData) {
+            countryInfoDiv.innerHTML = `
+            <h2>${countryData.name}</h2>
+            <p>Continent: ${countryData.continent}</p>
+            <p>Area: ${countryData.area}</p>
+            <p>Population: ${countryData.population}</p>
+            <p>Currency: ${countryData.currency}</p>
+            <p>Form of Government: ${countryData.formOfGovernment}</p>
+            <p>Language: ${countryData.language}</p>
+        `;
+        } else {
+            countryInfoDiv.innerHTML = '<p>Country not found.</p>';
+        }
+    }
+
+
+</script>
+</body>
+</html>
