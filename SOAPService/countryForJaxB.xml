@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<country xmlns="http://models">
+    <name>Denmark</name>
+    <shortName>DK</shortName>
+    <area>42924.1</area>
+    <population>5792202</population>
+    <currency>DKR</currency>
+    <formOfGovernment>MONARCHY</formOfGovernment>
+    <continent>EUROPE</continent>
+    <language>DANISH</language>
+</country>
